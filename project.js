@@ -1,4 +1,4 @@
-var OPENAI_API_KEY = "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";
+var OPENAI_API_KEY = "";
 
 let word1
 let word2
