@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>연관어 그리기</title>
+  <title>연관어로 그림 그려보기</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
-
+  <link rel="stylesheet" href="project.css">
+  <hr>
   <style>
-  
-  </style>
+</style>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
 
-<div class="p-5 bg-primary text-white text-center">
-  <h1>연관어 그리기</h1>
-  <p>단어를 입력하면 그림으로 나타내기</p> 
-</div>
-
-<h2>단어를 입력하기</h2>
+<div class="container">
+<img src="C:\Users\310-1\Desktop\김성찬\kio.jpg" width="100%" height="900px"></div>
+<div class="bottom-left"><img src="C:\Users\310-1\Desktop\김성찬\.jpg" width="280" height="420"></div>
+<div class="top-left"><img src="C:\Users\310-1\Desktop\김성찬\tt.jpg" width="240" height="530px"></div>
+<div class="top-right"> <h1>로그인</h1> ID <input type="text" name="ID" placeholder="ID 또는 이메일"><br/>
+PASSWORD <input type="password" name="비밀번호" placeholder="비밀번호 입력">
+<p>
+  <input value="LOGIN" type="submit" name="login"></div>
+</p>
+<div class="bottom-right"><img src="C:\Users\310-1\Desktop\김성찬\tt.jpg" width="250" height="380x"></div>
+<div class="centered"> <h1><span style="font-style: italic; font-weight: bold; font-size: 1.5em; line-height: 1.1em; color:red; font-family: arial"> 피닉스박
+  <img src="C:\Users\310-1\Desktop\김성찬\fal.jpg" width="29%" height="40px"</h1></span>
 
 <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="단어를 입력하세요" id="txtMsg">
-    <button class="btn btn-success" type="submit" onclick="Send()">대답하기</button>
+  <input type="text" class="form-control" placeholder="단어를 입력하세요" id="txtMsg">
+  <button class="btn btn-success" type="submit" onclick="Send()">대답하기</button>
 </div>
 
-<textarea id="txtOut" rows="5" class="form-control" placeholder="답변이 나타나는 곳입니다"></textarea>
+<!-- <textarea id="txtOut" rows="8" class="form-control" placeholder="출력결과"></textarea> -->
+<textarea id="txtOut2" rows="8" class="form-control" placeholder="연관단어"></textarea>
+<br>
+<!-- <textarea id="txtOut3" rows="10" class="form-control" placeholder="프롬프트 출력"></textarea> -->
 
-<h2>이미지 생성하기</h2>
+<h2 style="color:whitesmoke">생성하기</h2>
 
+<button class=btn onclick="Draw(prompts)">이미지 생성하기</button>
 <hr>
+<ol>
+  <li style="color:aliceblue">조금만 기다려주십시오.</li>
+  <li style="color:red">오류시 고객센터 연락바람.</li>
+</ol>
 <div class="imgContainer"></div>
 <img id="image1" style="border:0px">
 
