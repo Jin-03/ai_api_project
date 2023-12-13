@@ -1,8 +1,9 @@
 /* Container holding the image and the text */
 .container {
-    position: relative;
+    position: static;
     text-align: center;
     color: rgb(116, 75, 75);
+    background-color: darkgray;
   }
   
   /* Bottom left text */

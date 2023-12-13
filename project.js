@@ -4,7 +4,8 @@ let words = [];
 let prompts = [];
 
 function Send(){
-  let sQuestion = "Generate related words with " + txtMsg.value + " and print them out numbered.";
+  // let sQuestion = "Generate related words with " + txtMsg.value + " and print them out numbered.";
+  let sQuestion = txtMsg.value + " 에 연관된 단어들을 찾아서 번호를 매겨서 출력해줘.";
   console.log(sQuestion)
   let data = {
         model: "text-davinci-003",
